@@ -24,8 +24,6 @@ list_position0 = 0
 save_activate_status_ok = u""
 
 
-
-
 class Swup_regression():
 
         def __init__(self,file_path, host_name, password):
@@ -171,9 +169,7 @@ class Swup_regression():
                     self.test_passed(function_to_check_name)
                 else:
                     self.test_not_passed(function_to_check_name)
-
-
-
+                
 a = Swup_regression(r"", r"***.***.***.*", r"root")
 
 
