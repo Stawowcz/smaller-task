@@ -1,6 +1,3 @@
-
-
-
 class ParsowaniePliku():
 
     def __init__(self,plik_bez_niepotrzebnych_danych, plik_obliczeniowy, ilosc_dni)
