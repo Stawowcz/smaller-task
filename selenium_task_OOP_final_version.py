@@ -4,10 +4,8 @@ import time
 import urllib.request as url
 
 class Booking():
-
-
+    
     def __init__(self, driver_path, city, room_quantity, adults_quantity):
-        
         self.driver_path = driver_path
         self.city = city
         self.room_quantity = room_quantity
@@ -28,7 +26,6 @@ class Booking():
         self.driver = webdriver.Chrome(self.driver_path)
     
     def booking_test(self):
-
         self.driver.set_page_load_timeout(20)
         #1.	wejście na stronę google.pl
         self.driver.get("http://google.com")
@@ -65,7 +62,6 @@ class Booking():
         self.driver.save_screenshot("success.png")
         
     def assertion(self):
-
         #7.	sprawdzenie czy strona się otworzyła
         print ("Current url:\n" +  str(self.driver.current_url))
         assert ("www.booking.com" in self.driver.current_url)
@@ -75,7 +71,6 @@ class Booking():
         print("Assertion 2 with title part '– aktualne ceny na rok 2018' passed")
         
     def check_exit_code(self):
-
         #7.	sprawdzenie czy strona się otworzyła
         print ("Checking exit code: ")
         print ("Current url:\n" +  str(self.driver.current_url))
