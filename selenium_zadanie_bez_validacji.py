@@ -5,7 +5,6 @@ import time
 driver = webdriver.Chrome(r"d:\userdata\stawowcz\Desktop\drivers\chromedriver.exe")
 driver.set_page_load_timeout(10)
 driver.get("http://google.com")
-
 driver.find_element_by_name("q").send_keys('booking')
 element = driver.find_element_by_name("btnK")
 driver.execute_script("arguments[0].click();", element)
