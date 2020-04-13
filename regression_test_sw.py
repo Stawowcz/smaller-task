@@ -23,7 +23,6 @@ tuple_position0 = 0
 list_position0 = 0
 save_activate_status_ok = u""
 
-
 class Swup_regression():
 
         def __init__(self,file_path, host_name, password):
